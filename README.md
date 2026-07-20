@@ -203,6 +203,8 @@ omnisupport-copilot/
 │   ├── indexing/               # 向量索引构建
 │   └── graph/                  # Week13 schema/extract/align/community/build
 ├── services/graph/             # GraphStore + classifier + 四种图检索
+├── release/                    # Week14 immutable manifest / registry / compliance pack
+├── rollout/                    # Week14 canary decision / atomic rollback
 ├── analytics/                  # Week05 dbt Core 项目 + KPI mart + metric registry
 ├── contracts/                  # JSON Schema 数据/工具/发布契约
 │   ├── data/                   # 四类数据契约 (doc/ticket/audio/video)
@@ -214,6 +216,7 @@ omnisupport-copilot/
 │   ├── synthetic_generators/   # 合成工单/音频生成器
 │   └── canonization/           # 规范化后的课程资产
 ├── observability/              # Week12 OTel runtime + Phoenix + SLO/alerts + bad-case loop
+├── governance/                 # Week14 OpenLineage protocol adapter
 ├── evals/                      # 评测集 + eval harness + 回归报告
 ├── tests/
 │   ├── contract/               # JSON Schema 契约测试
@@ -241,10 +244,14 @@ omnisupport-copilot/
 | W11 | 🔄 | Golden set、RAGAS 风格 6 指标、Judge 校准、回归门禁、业务 SLO |
 | W12 | 🔄 | OTel/OpenInference、RAG/Tool/HITL spans、Phoenix、SLO 告警、bad-case 回归闭环 |
 | W13 | 🔄 | 图派生资产、实体对齐、Local/Global/Multi-hop/DRIFT、按题型 A/B、release 绑定 |
-| W14-15 | 📅 | 统一治理、Capstone |
+| W14 | 🔄 | lakeFS 数据版本策略、v2 统一发布清单、影响分析、灰度门禁、原子回滚、合规证据包 |
+| W15 | 📅 | 成本、SLO、Runbook 与 Capstone 交付 |
 
 Week13 GraphRAG 入口见 [runbooks/week13-graphrag.md](runbooks/week13-graphrag.md)，
 文件级设计见 [docs/blueprints/week13/week13-graphrag-blueprint.md](docs/blueprints/week13/week13-graphrag-blueprint.md)。
+
+Week14 治理发布入口见 [runbooks/week14-governed-release.md](runbooks/week14-governed-release.md)，
+文件级设计见 [docs/blueprints/week14/week14-governed-release-blueprint.md](docs/blueprints/week14/week14-governed-release-blueprint.md)。
 
 Week12 可观测闭环入口见 [runbooks/week12-observability.md](runbooks/week12-observability.md)。
 
